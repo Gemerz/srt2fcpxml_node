@@ -7,16 +7,15 @@ import { MainTemplate, CueTempate, cueType } from './template';
 import { resources, resourcesEnum } from './constants/resources';
 export class Parser {
     private srtPath: string = '';
-    private workspaceName: string = '.';
-    constructor(srtPath: string, workspaceName: string) {
+    private output: string = '.';
+    constructor(srtPath: string, output: string) {
         this.srtPath = srtPath
-        this.workspaceName = workspaceName
+        this.output = output
     }
     init() {
-        this.runParse(this.srtPath, this.workspaceName);
+        this.runParse(this.srtPath, this.output);
     }
-    runParse(srtPath: string, workspaceName: string): void {
-        console.log(workspaceName)
+    runParse(srtPath: string, output: string): void {
         const list = [];
         fs.createReadStream(srtPath)
             .pipe(parse())
@@ -34,6 +33,7 @@ export class Parser {
                 const lastCue: cueType = list.slice(-1)[0]
                 const totalCueTime = lastCue.data.end
                 const fileName = srtPath.replace(/(.+)\/(.+)$/, '$2')
+                const outputPath = output + '/' + fileName + '.fcpxml'
                 const eventName = "srt2fcpxml_node"
                 const resourceConfig = resources[resourcesEnum.p2400]
                 const config = {
@@ -51,9 +51,12 @@ export class Parser {
                     resources: resourceConfig
                 }
                 const fcpXMl = MainTemplate(config, resourceConfig)
-                const fcpxmlFile = fs.createWriteStream('./test-vue.fcpxml')
+                const fcpxmlFile = fs.createWriteStream(outputPath)
                 var formattedXml = formater(fcpXMl);
                 fcpxmlFile.write(formattedXml)
+                fcpxmlFile.on("finish", () => {
+                    console.log("输出成功！！")
+                })
             })
         // .pipe(resync(-100))
         // .pipe(stringify({ format: 'WebVTT' }))
