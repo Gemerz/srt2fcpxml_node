@@ -7,7 +7,12 @@
   "module": "build/module/index.js",
   "repository": "https://github.com/chloe-lam/srt2fcpxml_node",
   "license": "MIT",
-  "keywords": ["fcpxml","srt2fcpxml","srt to fcpxml","srt to fcpxml node version"],
+  "keywords": [
+    "fcpxml",
+    "srt2fcpxml",
+    "srt to fcpxml",
+    "srt to fcpxml node version"
+  ],
   "scripts": {
     "build": "run-p build:*",
     "build:main": "tsc -p tsconfig.json",
