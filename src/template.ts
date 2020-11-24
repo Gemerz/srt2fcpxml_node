@@ -56,7 +56,7 @@ export const CueTempate = (cue: cueType[], resource: resourcesType) => {
     return Array.from(cue).map((item, key) => {
         const start = item.data.start / 1000 || 0
         const end = item.data.end / 1000 || 0
-        const projectStart = 3 * resource.frameDurationDenominator * resource.frameDurationMolecular
+        const projectStart = 3.6 * resource.frameDurationDenominator * resource.frameDurationMolecular
         let offset = Math.round(start * resource.frameRate) * resource.frameDurationMolecular + projectStart
         const duration = Math.round((end - start) * resource.frameRate) * resource.frameDurationMolecular * 120000.0 / resource.frameDurationDenominator
 
