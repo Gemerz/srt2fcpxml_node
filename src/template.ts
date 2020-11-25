@@ -1,4 +1,3 @@
-import { constants } from './constants/constants';
 import { pluginType } from './constants/plugin';
 import { resourcesType } from './constants/resources';
 export type cueType = {
@@ -73,8 +72,9 @@ export const CueTemplate = (
   return Array.from(cue).map((item, key) => {
     const start = item.data.start / 1000 || 0;
     const end = item.data.end / 1000 || 0;
+    const latestGap = gap || 3.6;
     const projectStart =
-      gap * resource.frameDurationDenominator * resource.frameDurationMolecular;
+      latestGap * resource.frameDurationDenominator * resource.frameDurationMolecular;
     const offset =
       Math.round(start * resource.frameRate) * resource.frameDurationMolecular +
       projectStart;
@@ -88,12 +88,9 @@ export const CueTemplate = (
       }s" ref="r2" duration="${duration}/${resource.frameDurationDenominator
       }s" start="${projectStart}/${resource.frameDurationDenominator}s">
                     ${pluginTemplate(isUsePlugin)}
-                <text>
-                    <text-style ref="ts${key + 1}">${item.data.text
-      }</text-style>
-                </text>
+                <text><text-style ref="ts${key + 1}">${item.data.text}</text-style></text>
                 <text-style-def id="ts${key + 1}">
-                    <text-style font="PingFang SC" fontSize="52" fontFace="Semibold" fontColor="0.999993 1 1 1" bold="1" shadowColor="0 0 0 0.75" shadowOffset="5 315" alignment="center"></text-style>
+                <text-style font="PingFang SC" fontSize="52" fontFace="Semibold" fontColor="1 1 1 1" bold="1" strokeColor="0.329705 0.329721 0.329713 1" strokeWidth="1" shadowColor="0 0 0 0.75" shadowOffset="3 315" kerning="1.24" alignment="center"/>
                 </text-style-def>
              </title>
         `;

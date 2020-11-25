@@ -70,7 +70,14 @@ function runParse(params: ParserParam) {
       const fcpXMl = MainTemplate(config, resourceConfig);
       const fcpXmlFile = fs.createWriteStream(outputPath);
       /* cSpell:disable */
-      const formattedXml = formater(fcpXMl);
+      const formattedXml = formater(fcpXMl, {
+        indentation: '  ',
+        filter: (node) => {
+          return node
+        },
+        collapseContent: true,
+        lineSeparator: '\n'
+      });
       fcpXmlFile.write(formattedXml);
       fcpXmlFile.end(() => {
         console.log(
