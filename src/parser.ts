@@ -67,6 +67,5 @@ function runParse(params: ParserParam) {
     });
 }
 export const Parser = (params: ParserParam) => {
-  console.log(params);
   return runParse(params);
 };
