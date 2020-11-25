@@ -60,7 +60,6 @@ if (program.opts().custom) {
         'Hey, Do you want use custom subtitle fcpx plugin? \n will copy file to your \n ~/Movies/Motion Templates.localized/Titles.localized ',
     });
     if (answer) {
-      console.log('Yeah!!');
       copyPlugin()
     } else {
       console.log(
