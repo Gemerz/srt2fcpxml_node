@@ -2,6 +2,7 @@
 export * from './lib/async';
 export * from './lib/number';
 import { program } from 'commander';
+import * as root from 'app-root-path';
 
 import { checkSrtPath } from './lib/helper';
 import { Parser } from './parser';
@@ -16,7 +17,7 @@ program.parse(process.argv);
 
 if (program.opts().srt) {
   const srtParam = program.opts().srt;
-  const outputParam = program.opts().output || '.';
+  const outputParam = program.opts().output || root.path;
   if (checkSrtPath(srtParam)) {
     Parser(srtParam, outputParam);
   }
