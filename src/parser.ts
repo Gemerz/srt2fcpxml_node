@@ -50,8 +50,9 @@ function runParse(params: ParserParam) {
       /* cSpell:enable */
       const resourceConfig = resources[params.rateKey];
       const gap = params.gap;
+      const isUsePlugin = params.isUsePlugin
       const config = {
-        cuesTemplate: CueTemplate(list, resourceConfig, gap).join(''),
+        cuesTemplate: CueTemplate(list, resourceConfig, gap, isUsePlugin).join(''),
         project: {
           name: projectName,
           uid: uuidV4(),
@@ -64,6 +65,7 @@ function runParse(params: ParserParam) {
         totalCueTime: totalCueTime,
         resources: resourceConfig,
         gap,
+        isUsePlugin
       };
       const fcpXMl = MainTemplate(config, resourceConfig);
       const fcpXmlFile = fs.createWriteStream(outputPath);
