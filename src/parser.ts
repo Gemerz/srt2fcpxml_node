@@ -39,7 +39,7 @@ function runParse(params: ParserParam) {
       const totalCueTime = lastCue.data.end;
       const fileName = params.srtPath.replace(/(.+)\/(.+)$/, '$2');
       const outputPath = params.outputPath + '/' + fileName + '.fcpxml';
-      const eventName = 'srt2fcpxml_node';
+      const eventName = params.eventName || 'srt2fcpxml_node';
       const resourceConfig = resources[params.rateKey];
       const config = {
         cuesTempate: CueTempate(list, resourceConfig).join(''),
