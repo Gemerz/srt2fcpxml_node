@@ -1,10 +1,9 @@
-import fs from 'fs';
-
-// import { parse, resync, stringify } from 'subtitle';
+import chalk from 'chalk';
+import * as fs from 'fs-extra';
 import { map, parse } from 'subtitle';
+// import { parse, resync, stringify } from 'subtitle';
 import { v4 as uuidv4 } from 'uuid';
 import formater from 'xml-formatter';
-import chalk from 'chalk';
 
 import { resources, resourcesEnum } from './constants/resources';
 import { CueTempate, cueType, MainTemplate } from './template';
@@ -55,8 +54,8 @@ function runParse(srtPath: string, output: string) {
             const fcpxmlFile = fs.createWriteStream(outputPath);
             const formattedXml = formater(fcpXMl);
             fcpxmlFile.write(formattedXml);
-            fcpxmlFile.on('finish', () => {
-                console.log('输出成功！！');
+            fcpxmlFile.end(() => {
+                console.log(chalk.greenBright.bold(`success! the output file are ${outputPath}`))
             });
         });
     // .pipe(resync(-100))

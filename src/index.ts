@@ -14,9 +14,6 @@ program
 
 program.parse(process.argv);
 
-// console.log('Options: ', program.opts());
-// console.log('Remaining arguments: ', program.args);
-
 if (program.opts().srt) {
   const srtParam = program.opts().srt;
   const outputParam = program.opts().output || '.';
