@@ -4,11 +4,13 @@ export * from './lib/number';
 export { Parser } from './parser';
 import * as path from 'path';
 
+import confirm from '@inquirer/confirm';
 import * as root from 'app-root-path';
+import chalk from 'chalk';
 import { program } from 'commander';
 import * as fs from 'fs-extra';
 
-import { checkRate, checkSrtPath, formateRateKey } from './lib/helper';
+import { checkRate, checkSrtPath, copyPlugin, formateRateKey } from './lib/helper';
 import { Parser } from './parser';
 
 const packageJson = fs.readJsonSync(
@@ -24,27 +26,49 @@ program
   )
   .option('-e, --event <event>', 'event name')
   .option('-p, --project <project>', 'project name')
+  .option('-c, --custom', 'use custom plugin')
   .option('-g, --gap <gap>', 'gap: number,default 3.6');
 
 program.parse(process.argv);
 
-if (program.opts().srt) {
-  const srtParam = program.opts().srt;
-  const outputParam = program.opts().output || root.path;
-  const rateParam = formateRateKey(program.opts().rate);
-  /* cSpell:disable */
-  const eventName = program.opts().event || 'srt2fcpxml_node';
-  const projectName = program.opts().project;
-  const gap = parseFloat(program.opts().gap);
+const mainProcess = () => {
+  if (program.opts().srt) {
+    const srtParam = program.opts().srt;
+    const outputParam = program.opts().output || root.path;
+    const rateParam = formateRateKey(program.opts().rate);
+    /* cSpell:disable */
+    const eventName = program.opts().event || 'srt2fcpxml_node';
+    const projectName = program.opts().project;
+    const gap = parseFloat(program.opts().gap);
 
-  if (checkSrtPath(srtParam) && checkRate(rateParam)) {
-    Parser({
-      srtPath: srtParam,
-      outputPath: outputParam,
-      eventName,
-      rateKey: rateParam,
-      projectName,
-      gap,
-    });
+    if (checkSrtPath(srtParam) && checkRate(rateParam)) {
+      Parser({
+        srtPath: srtParam,
+        outputPath: outputParam,
+        eventName,
+        rateKey: rateParam,
+        projectName,
+        gap,
+      });
+    }
   }
+};
+if (program.opts().custom) {
+  (async () => {
+    const answer = await confirm({
+      message:
+        'Hey, Do you want use custom subtitle fcpx plugin? \n will copy file to your \n ~/Movies/Motion Templates.localized/Titles.localized ',
+    });
+    if (answer) {
+      console.log('Yeah!!');
+      copyPlugin()
+    } else {
+      console.log(
+        chalk.yellowBright.bold('please copy that plugin by yourself')
+      );
+    }
+    mainProcess()
+  })();
+} else {
+  mainProcess();
 }
