@@ -43,7 +43,7 @@ export const MainTemplate = (
         </resources>
         <library location="file:///Users/gemer/Movies/test-vue.fcpbundle">
             <event name="${data.event.name}" uid="${data.event.uid}">
-                <project name="${data.event.name}-project" uid="${data.project.uid}" modDate="2020-11-16 13:22:32 +0800">
+                <project name="${data.project.fileName}" uid="${data.project.uid}" modDate="2020-11-16 13:22:32 +0800">
                     <sequence duration="${sequenceDuration}/${resource.frameDurationDenominator}s" format="r1" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
                         <spine>
                             <gap name="空隙" offset="0s" duration="${gapDuration}/${resource.frameDurationDenominator}s" start="${gapStart}/${resource.frameDurationDenominator}s">
@@ -60,7 +60,7 @@ export const MainTemplate = (
 
 export const CueTempate = (
   cue: readonly cueType[],
-  resource: resourcesType
+  resource: resourcesType,
 ) => {
   return Array.from(cue).map((item, key) => {
     const start = item.data.start / 1000 || 0;

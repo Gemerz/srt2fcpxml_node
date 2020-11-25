@@ -13,6 +13,7 @@ type ParserParam = {
   readonly outputPath: string;
   readonly eventName: string;
   readonly rateKey?: string;
+  readonly projectName?: string
 };
 function runParse(params: ParserParam) {
   const list = [];
@@ -37,7 +38,8 @@ function runParse(params: ParserParam) {
     .on('finish', () => {
       const lastCue: cueType = list.slice(-1)[0];
       const totalCueTime = lastCue.data.end;
-      const fileName = params.srtPath.replace(/(.+)\/(.+)$/, '$2');
+      const fileName = params.projectName || params.srtPath.replace(/(.+)\/(.+)$/, '$2');
+      console.log('fileName', fileName)
       const outputPath = params.outputPath + '/' + fileName + '.fcpxml';
       const eventName = params.eventName || 'srt2fcpxml_node';
       const resourceConfig = resources[params.rateKey];
