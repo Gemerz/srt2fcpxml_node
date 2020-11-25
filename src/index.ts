@@ -3,6 +3,7 @@ export * from './lib/async';
 export * from './lib/number';
 import { program } from 'commander';
 
+import { checkSrtPath } from './lib/helper';
 import { Parser } from './parser';
 
 program
@@ -13,12 +14,15 @@ program
 
 program.parse(process.argv);
 
-console.log('Options: ', program.opts());
-console.log('Remaining arguments: ', program.args);
+// console.log('Options: ', program.opts());
+// console.log('Remaining arguments: ', program.args);
 
 if (program.opts().srt) {
   const srtParam = program.opts().srt;
   const outputParam = program.opts().output || '.';
+  if (checkSrtPath(srtParam)) {
+    Parser(srtParam, outputParam);
+  }
   // const rateParam = program.opts().rate || 30
-  Parser(srtParam, outputParam);
+
 }

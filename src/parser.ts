@@ -4,6 +4,7 @@ import fs from 'fs';
 import { map, parse } from 'subtitle';
 import { v4 as uuidv4 } from 'uuid';
 import formater from 'xml-formatter';
+import chalk from 'chalk';
 
 import { resources, resourcesEnum } from './constants/resources';
 import { CueTempate, cueType, MainTemplate } from './template';
@@ -26,7 +27,9 @@ function runParse(srtPath: string, output: string) {
             // eslint-disable-next-line functional/immutable-data
             list.push(node);
         })
-        .on('error', console.error)
+        .on('error', (err) => {
+            console.log(chalk.blue.bgRed.bold(err))
+        })
         .on('finish', () => {
             const lastCue: cueType = list.slice(-1)[0];
             const totalCueTime = lastCue.data.end;
