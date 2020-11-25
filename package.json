@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "srt to fcpxml srt2fcpxml node version",
   "main": "build/main/index.js",
+  "bin": {
+    "srt2fcpxml": "build/main/index.js"
+  },
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
   "repository": "https://github.com/chloe-lam/srt2fcpxml_node",
