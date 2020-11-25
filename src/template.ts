@@ -85,8 +85,7 @@ export const CueTemplate = (
       resource.frameDurationDenominator;
 
     return ` <title name="${item.data.text}" lane="1" offset="${offset}/${resource.frameDurationDenominator
-      }s" ref="r2" duration="${duration}/${resource.frameDurationDenominator
-      }s" start="${projectStart}/${resource.frameDurationDenominator}s">
+      }s" ref="r2" duration="${duration}/120000s" start="${projectStart}/${resource.frameDurationDenominator}s">
                     ${pluginTemplate(isUsePlugin)}
                 <text><text-style ref="ts${key + 1}">${item.data.text}</text-style></text>
                 <text-style-def id="ts${key + 1}">
