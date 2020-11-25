@@ -1,6 +1,6 @@
 {
   "name": "srt2fcpxml",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "srt to fcpxml srt2fcpxml node version",
   "main": "build/main/index.js",
   "bin": {
@@ -8,7 +8,7 @@
   },
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "homepage":"https://github.com/chloe-lam/srt2fcpxml_node",
+  "homepage": "https://github.com/chloe-lam/srt2fcpxml_node",
   "repository": "https://github.com/chloe-lam/srt2fcpxml_node",
   "license": "MIT",
   "keywords": [
