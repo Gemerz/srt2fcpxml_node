@@ -4,7 +4,6 @@ export * from './lib/number';
 import * as root from 'app-root-path';
 import { program } from 'commander';
 
-import { resources, resourcesEnum } from './constants/resources';
 import { checkRate, checkSrtPath, formateRateKey } from './lib/helper';
 import { Parser } from './parser';
 

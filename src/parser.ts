@@ -5,7 +5,7 @@ import { map, parse } from 'subtitle';
 import { v4 as uuidv4 } from 'uuid';
 import formater from 'xml-formatter';
 
-import { resources, resourcesEnum } from './constants/resources';
+import { resources } from './constants/resources';
 import { CueTempate, cueType, MainTemplate } from './template';
 
 type ParserParam = {
