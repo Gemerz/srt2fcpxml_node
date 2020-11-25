@@ -58,7 +58,10 @@ export const MainTemplate = (
     `;
 };
 
-export const CueTempate = (cue: readonly cueType[], resource: resourcesType) => {
+export const CueTempate = (
+  cue: readonly cueType[],
+  resource: resourcesType
+) => {
   return Array.from(cue).map((item, key) => {
     const start = item.data.start / 1000 || 0;
     const end = item.data.end / 1000 || 0;
