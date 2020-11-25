@@ -11,10 +11,14 @@ import { checkRate, checkSrtPath, formateRateKey } from './lib/helper';
 import { Parser } from './parser';
 
 const pjson = fs.readJsonSync(path.resolve(root.path, 'package.json'));
-program.version(pjson.version)
+program
+  .version(pjson.version)
   .requiredOption('-s, --srt <source>', 'srt file path')
   .option('-o, --output <output>', 'fileout name [deafault current]')
-  .option('-r, --rate <rate>', 'rate:AKA:23.98,24,25,29.87,30,50,59.94,60')
+  .option(
+    '-r, --rate <rate>',
+    'rate: deafault 30, AKA:23.98,24,25,29.87,30,50,59.94,60'
+  )
   .option('-e, --event <event>', 'event name')
   .option('-p, --project <project>', 'project name')
   .option('-g, --gap <gap>', 'gap: number,default 3.6');
@@ -27,6 +31,7 @@ if (program.opts().srt) {
   const rateParam = formateRateKey(program.opts().rate);
   const eventName = program.opts().event || 'srt2fcpxml_node';
   const projectName = program.opts().project;
+  const gap = parseFloat(program.opts().gap);
 
   if (checkSrtPath(srtParam) && checkRate(rateParam)) {
     Parser({
@@ -35,6 +40,7 @@ if (program.opts().srt) {
       eventName,
       rateKey: rateParam,
       projectName,
+      gap,
     });
   }
 }

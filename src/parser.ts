@@ -14,6 +14,7 @@ type ParserParam = {
   readonly eventName: string;
   readonly rateKey?: string;
   readonly projectName?: string;
+  readonly gap?: number;
 };
 function runParse(params: ParserParam) {
   const list = [];
@@ -43,8 +44,9 @@ function runParse(params: ParserParam) {
       const outputPath = params.outputPath + '/' + fileName + '.fcpxml';
       const eventName = params.eventName || 'srt2fcpxml_node';
       const resourceConfig = resources[params.rateKey];
+      const gap = params.gap
       const config = {
-        cuesTempate: CueTempate(list, resourceConfig).join(''),
+        cuesTempate: CueTempate(list, resourceConfig, gap).join(''),
         project: {
           name: projectName,
           uid: uuidv4(),
@@ -56,6 +58,7 @@ function runParse(params: ParserParam) {
         },
         totalCueTime: totalCueTime,
         resources: resourceConfig,
+        gap
       };
       const fcpXMl = MainTemplate(config, resourceConfig);
       const fcpxmlFile = fs.createWriteStream(outputPath);
