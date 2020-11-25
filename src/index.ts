@@ -31,7 +31,7 @@ program
 
 program.parse(process.argv);
 
-const mainProcess = () => {
+const mainProcess = (isUsePlugin = false) => {
   if (program.opts().srt) {
     const srtParam = program.opts().srt;
     const outputParam = program.opts().output || root.path;
@@ -49,6 +49,7 @@ const mainProcess = () => {
         rateKey: rateParam,
         projectName,
         gap,
+        isUsePlugin
       });
     }
   }
@@ -66,7 +67,7 @@ if (program.opts().custom) {
         chalk.yellowBright.bold('please copy that plugin by yourself')
       );
     }
-    mainProcess()
+    mainProcess(true)
   })();
 } else {
   mainProcess();

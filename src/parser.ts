@@ -17,6 +17,7 @@ type ParserParam = {
   readonly rateKey?: string;
   readonly projectName?: string;
   readonly gap?: number;
+  readonly isUsePlugin?: boolean;
 };
 function runParse(params: ParserParam) {
   const list = [];
