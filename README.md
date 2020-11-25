@@ -2,6 +2,8 @@
 
 > the srt subtitle file is converted to a final cut pro subtitle
 
+[online document](https://chloe-lam.github.io/srt2fcpxml_node/)
+
 # installation
 
 ```js
