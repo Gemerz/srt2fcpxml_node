@@ -8,6 +8,7 @@
   },
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
+  "homepage":"https://github.com/chloe-lam/srt2fcpxml_node",
   "repository": "https://github.com/chloe-lam/srt2fcpxml_node",
   "license": "MIT",
   "keywords": [
