@@ -1,3 +1,9 @@
-# srt2fcpxml_node
+# srt2fcpxml
 
-srt to fcpxml srt2fcpxml_node
+> the srt subtitle file is converted to a final cut pro subtitle
+
+# installation
+
+```js
+npm i srt2fcpxml -g
+```
