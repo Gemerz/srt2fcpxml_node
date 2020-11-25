@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 export * from './lib/async';
 export * from './lib/number';
 import { program } from 'commander';
