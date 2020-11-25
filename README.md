@@ -1,6 +1,6 @@
 # srt2fcpxml
 
-[![CircleCI]((https://circleci.com/gh/chloe-lam/srt2fcpxml_node.svg?style=shield)](https://circleci.com/gh/chloe-lam/srt2fcpxml_node)
+[![chloe-lam](https://circleci.com/gh/chloe-lam/srt2fcpxml_node.svg?style=shield)](https://circleci.com/gh/chloe-lam/srt2fcpxml_node)
 
 > the srt subtitle file is converted to a final cut pro subtitle
 
