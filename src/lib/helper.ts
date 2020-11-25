@@ -40,32 +40,33 @@ export const formateRateKey = (rate: string): string => {
 };
 
 export const copyPlugin = () => {
-  const titlesPath = `${os.homedir()}/Movies/Motion Templates.localized/Titles.localized`
-  const pluginPath = path.resolve(__dirname, '../../../src/plugin/adaptive-background')
+  const titlesPath = `${os.homedir()}/Movies/Motion Templates.localized/Titles.localized`;
+  const pluginPath = path.resolve(
+    __dirname,
+    '../../../src/plugin/adaptive-background'
+  );
   if (!fs.existsSync(titlesPath)) {
     /* cSpell:disable */
     log(
       chalk.red(
-        "hey, your FCPX Motion is not a default path, please copy by yourself"
+        'hey, your FCPX Motion is not a default path, please copy by yourself'
       )
     );
     /* cSpell:enable */
   }
-  copydir.sync(pluginPath, titlesPath + "/adaptive-background", {
-    utimes: true,  // keep add time and modify time
-    mode: true,    // keep file mode
-    cover: true    // cover file when exists, default is true
-  }, (error) => {
-    if (error) log(
-      chalk.red(
-        "hey, somethings wrong,please copy plugin by yourself"
-      )
-    );
-
-  });
-  log(chalk.greenBright(
-    "copy custom plugin done!"
-  ))
-  return null
-}
-
+  copydir.sync(
+    pluginPath,
+    titlesPath + '/adaptive-background',
+    {
+      utimes: true, // keep add time and modify time
+      mode: true, // keep file mode
+      cover: true, // cover file when exists, default is true
+    },
+    (error) => {
+      if (error)
+        log(chalk.red('hey, somethings wrong,please copy plugin by yourself'));
+    }
+  );
+  log(chalk.greenBright('copy custom plugin done!'));
+  return null;
+};

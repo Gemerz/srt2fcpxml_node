@@ -37,7 +37,7 @@ export const MainTemplate = (
   const sequenceDuration =
     Math.round((data.totalCueTime / 1000) * resource.frameRate) *
     resource.frameDurationMolecular;
-  const pluginPath = data.isUsePlugin ? pluginType.custom : pluginType.base
+  const pluginPath = data.isUsePlugin ? pluginType.custom : pluginType.base;
   /* cSpell:disable */
   return `<?xml version="1.0" encoding="UTF-8" ?>
         <!DOCTYPE fcpxml>
@@ -74,7 +74,9 @@ export const CueTemplate = (
     const end = item.data.end / 1000 || 0;
     const latestGap = gap || 3.6;
     const projectStart =
-      latestGap * resource.frameDurationDenominator * resource.frameDurationMolecular;
+      latestGap *
+      resource.frameDurationDenominator *
+      resource.frameDurationMolecular;
     const offset =
       Math.round(start * resource.frameRate) * resource.frameDurationMolecular +
       projectStart;
@@ -84,10 +86,15 @@ export const CueTemplate = (
         120000.0) /
       resource.frameDurationDenominator;
 
-    return ` <title name="${item.data.text}" lane="1" offset="${offset}/${resource.frameDurationDenominator
-      }s" ref="r2" duration="${duration}/120000s" start="${projectStart}/${resource.frameDurationDenominator}s">
+    return ` <title name="${item.data.text}" lane="1" offset="${offset}/${
+      resource.frameDurationDenominator
+    }s" ref="r2" duration="${duration}/120000s" start="${projectStart}/${
+      resource.frameDurationDenominator
+    }s">
                     ${pluginTemplate(isUsePlugin)}
-                <text><text-style ref="ts${key + 1}">${item.data.text}</text-style></text>
+                <text><text-style ref="ts${key + 1}">${
+      item.data.text
+    }</text-style></text>
                 <text-style-def id="ts${key + 1}">
                 <text-style font="PingFang SC" fontSize="52" fontFace="Semibold" fontColor="1 1 1 1" bold="1" strokeColor="0.329705 0.329721 0.329713 1" strokeWidth="1" shadowColor="0 0 0 0.75" shadowOffset="3 315" kerning="1.24" alignment="center"/>
                 </text-style-def>
@@ -99,7 +106,7 @@ export const CueTemplate = (
 const pluginTemplate = (isUsePlugin = false): string => {
   const base = ` <param name="位置" key="9999/999166631/999166633/1/100/101" value="0 -450"></param>
   <param name="对齐" key="9999/999166631/999166633/2/354/999169573/401" value="1 (居中)"></param>
-  <param name="展平" key="9999/999166631/999166633/2/351" value="1"></param>`
+  <param name="展平" key="9999/999166631/999166633/2/351" value="1"></param>`;
   const custom = `<param name="位置" key="9999/10199/10201/1/100/101" value="0 -445.000"/>
   <param name="对齐" key="9999/10199/10201/2/354/1002961760/401" value="1 (居中)"/><param name="Scale X" key="9999/1825768416/100/1825768417/2/100" value="0.03333333333333333"/>
   <param name="Scale Y" key="9999/1825768479/100/1825768480/2/100" value="0.03333333333333333"/>
@@ -107,6 +114,6 @@ const pluginTemplate = (isUsePlugin = false): string => {
   <param name="Build Out" key="9999/10000/2/102" value="0"/>
   <param name="Opacity" key="9999/1825768325/10003/10045/1/200/202" value="0.7"/>
   <param name="BG Color" key="9999/1825768325/10003/10045/2/353/113/111" value="0 0 0"/>
-  <param name="Out Sequencing" key="9999/10199/10201/4/10233/201/202" value="0 (到)"/>`
-  return isUsePlugin ? custom : base
-}
+  <param name="Out Sequencing" key="9999/10199/10201/4/10233/201/202" value="0 (到)"/>`;
+  return isUsePlugin ? custom : base;
+};

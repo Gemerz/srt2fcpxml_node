@@ -10,7 +10,12 @@ import chalk from 'chalk';
 import { program } from 'commander';
 import * as fs from 'fs-extra';
 
-import { checkRate, checkSrtPath, copyPlugin, formateRateKey } from './lib/helper';
+import {
+  checkRate,
+  checkSrtPath,
+  copyPlugin,
+  formateRateKey,
+} from './lib/helper';
 import { Parser } from './parser';
 
 const packageJson = fs.readJsonSync(
@@ -49,7 +54,7 @@ const mainProcess = (isUsePlugin = false) => {
         rateKey: rateParam,
         projectName,
         gap,
-        isUsePlugin
+        isUsePlugin,
       });
     }
   }
@@ -61,13 +66,13 @@ if (program.opts().custom) {
         'Hey, Do you want use custom subtitle fcpx plugin? \n will copy file to your \n ~/Movies/Motion Templates.localized/Titles.localized ',
     });
     if (answer) {
-      copyPlugin()
+      copyPlugin();
     } else {
       console.log(
         chalk.yellowBright.bold('please copy that plugin by yourself')
       );
     }
-    mainProcess(true)
+    mainProcess(true);
   })();
 } else {
   mainProcess();

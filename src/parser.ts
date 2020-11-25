@@ -50,9 +50,11 @@ function runParse(params: ParserParam) {
       /* cSpell:enable */
       const resourceConfig = resources[params.rateKey];
       const gap = params.gap;
-      const isUsePlugin = params.isUsePlugin
+      const isUsePlugin = params.isUsePlugin;
       const config = {
-        cuesTemplate: CueTemplate(list, resourceConfig, gap, isUsePlugin).join(''),
+        cuesTemplate: CueTemplate(list, resourceConfig, gap, isUsePlugin).join(
+          ''
+        ),
         project: {
           name: projectName,
           uid: uuidV4(),
@@ -65,7 +67,7 @@ function runParse(params: ParserParam) {
         totalCueTime: totalCueTime,
         resources: resourceConfig,
         gap,
-        isUsePlugin
+        isUsePlugin,
       };
       const fcpXMl = MainTemplate(config, resourceConfig);
       const fcpXmlFile = fs.createWriteStream(outputPath);
@@ -73,10 +75,10 @@ function runParse(params: ParserParam) {
       const formattedXml = formater(fcpXMl, {
         indentation: '  ',
         filter: (node) => {
-          return node
+          return node;
         },
         collapseContent: true,
-        lineSeparator: '\n'
+        lineSeparator: '\n',
       });
       fcpXmlFile.write(formattedXml);
       fcpXmlFile.end(() => {
