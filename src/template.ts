@@ -8,7 +8,7 @@ export type cueType = {
   };
 };
 type MainTemplateDataType = {
-  readonly cuesTempate: string;
+  readonly cuesTemplate: string;
   readonly project: {
     readonly name: string;
     readonly uid: string;
@@ -35,7 +35,7 @@ export const MainTemplate = (
   const sequenceDuration =
     Math.round((data.totalCueTime / 1000) * resource.frameRate) *
     resource.frameDurationMolecular;
-
+  /* cSpell:disable */
   return `<?xml version="1.0" encoding="UTF-8" ?>
         <!DOCTYPE fcpxml>
         <fcpxml version="1.7">
@@ -49,7 +49,7 @@ export const MainTemplate = (
                     <sequence duration="${sequenceDuration}/${resource.frameDurationDenominator}s" format="r1" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
                         <spine>
                             <gap name="空隙" offset="0s" duration="${gapDuration}/${resource.frameDurationDenominator}s" start="${gapStart}/${resource.frameDurationDenominator}s">
-                                ${data.cuesTempate}
+                                ${data.cuesTemplate}
                             </gap>
                         </spine>
                     </sequence>
@@ -60,7 +60,7 @@ export const MainTemplate = (
     `;
 };
 
-export const CueTempate = (
+export const CueTemplate = (
   cue: readonly cueType[],
   resource: resourcesType,
   gap = 3.6
@@ -79,18 +79,15 @@ export const CueTempate = (
         120000.0) /
       resource.frameDurationDenominator;
 
-    return ` <title name="${item.data.text}" lane="1" offset="${offset}/${
-      resource.frameDurationDenominator
-    }s" ref="r2" duration="${duration}/${
-      resource.frameDurationDenominator
-    }s" start="${projectStart}/${resource.frameDurationDenominator}s">
+    return ` <title name="${item.data.text}" lane="1" offset="${offset}/${resource.frameDurationDenominator
+      }s" ref="r2" duration="${duration}/${resource.frameDurationDenominator
+      }s" start="${projectStart}/${resource.frameDurationDenominator}s">
                     <param name="位置" key="9999/999166631/999166633/1/100/101" value="0 -450"></param>
                     <param name="对齐" key="9999/999166631/999166633/2/354/999169573/401" value="1 (居中)"></param>
                     <param name="展平" key="9999/999166631/999166633/2/351" value="1"></param>
                 <text>
-                    <text-style ref="ts${key + 1}">${
-      item.data.text
-    }</text-style>
+                    <text-style ref="ts${key + 1}">${item.data.text
+      }</text-style>
                 </text>
                 <text-style-def id="ts${key + 1}">
                     <text-style font="PingFang SC" fontSize="52" fontFace="Semibold" fontColor="0.999993 1 1 1" bold="1" shadowColor="0 0 0 0.75" shadowOffset="5 315" alignment="center"></text-style>

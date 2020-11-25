@@ -2,11 +2,13 @@ import chalk from 'chalk';
 import * as fs from 'fs-extra';
 import { map, parse } from 'subtitle';
 // import { parse, resync, stringify } from 'subtitle';
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidV4 } from 'uuid';
+/* cSpell:disable */
 import formater from 'xml-formatter';
 
+/* cSpell:enable */
 import { resources } from './constants/resources';
-import { CueTempate, cueType, MainTemplate } from './template';
+import { CueTemplate, cueType, MainTemplate } from './template';
 
 type ParserParam = {
   readonly srtPath: string;
@@ -41,30 +43,33 @@ function runParse(params: ParserParam) {
       const totalCueTime = lastCue.data.end;
       const fileName = params.srtPath.replace(/(.+)\/(.+)$/, '$2');
       const projectName = params.projectName || fileName;
+      /* cSpell:disable */
       const outputPath = params.outputPath + '/' + fileName + '.fcpxml';
       const eventName = params.eventName || 'srt2fcpxml_node';
+      /* cSpell:enable */
       const resourceConfig = resources[params.rateKey];
       const gap = params.gap;
       const config = {
-        cuesTempate: CueTempate(list, resourceConfig, gap).join(''),
+        cuesTemplate: CueTemplate(list, resourceConfig, gap).join(''),
         project: {
           name: projectName,
-          uid: uuidv4(),
+          uid: uuidV4(),
           modDate: 'today',
         },
         event: {
           name: eventName,
-          uid: uuidv4(),
+          uid: uuidV4(),
         },
         totalCueTime: totalCueTime,
         resources: resourceConfig,
         gap,
       };
       const fcpXMl = MainTemplate(config, resourceConfig);
-      const fcpxmlFile = fs.createWriteStream(outputPath);
+      const fcpXmlFile = fs.createWriteStream(outputPath);
+      /* cSpell:disable */
       const formattedXml = formater(fcpXMl);
-      fcpxmlFile.write(formattedXml);
-      fcpxmlFile.end(() => {
+      fcpXmlFile.write(formattedXml);
+      fcpXmlFile.end(() => {
         console.log(
           chalk.greenBright.bold(`success! the output file are ${outputPath}`)
         );
