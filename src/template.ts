@@ -10,7 +10,7 @@ export type cueType = {
 type MainTemplateDataType = {
   readonly cuesTempate: string;
   readonly project: {
-    readonly fileName: string;
+    readonly name: string;
     readonly uid: string;
     readonly modDate: string;
   };
@@ -43,7 +43,7 @@ export const MainTemplate = (
         </resources>
         <library location="file:///Users/gemer/Movies/test-vue.fcpbundle">
             <event name="${data.event.name}" uid="${data.event.uid}">
-                <project name="${data.project.fileName}" uid="${data.project.uid}" modDate="2020-11-16 13:22:32 +0800">
+                <project name="${data.project.name}" uid="${data.project.uid}" modDate="2020-11-16 13:22:32 +0800">
                     <sequence duration="${sequenceDuration}/${resource.frameDurationDenominator}s" format="r1" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
                         <spine>
                             <gap name="空隙" offset="0s" duration="${gapDuration}/${resource.frameDurationDenominator}s" start="${gapStart}/${resource.frameDurationDenominator}s">
@@ -60,7 +60,7 @@ export const MainTemplate = (
 
 export const CueTempate = (
   cue: readonly cueType[],
-  resource: resourcesType,
+  resource: resourcesType
 ) => {
   return Array.from(cue).map((item, key) => {
     const start = item.data.start / 1000 || 0;
@@ -76,15 +76,18 @@ export const CueTempate = (
         120000.0) /
       resource.frameDurationDenominator;
 
-    return ` <title name="${item.data.text}" lane="1" offset="${offset}/${resource.frameDurationDenominator
-      }s" ref="r2" duration="${duration}/${resource.frameDurationDenominator
-      }s" start="${projectStart}/${resource.frameDurationDenominator}s">
+    return ` <title name="${item.data.text}" lane="1" offset="${offset}/${
+      resource.frameDurationDenominator
+    }s" ref="r2" duration="${duration}/${
+      resource.frameDurationDenominator
+    }s" start="${projectStart}/${resource.frameDurationDenominator}s">
                     <param name="位置" key="9999/999166631/999166633/1/100/101" value="0 -450"></param>
                     <param name="对齐" key="9999/999166631/999166633/2/354/999169573/401" value="1 (居中)"></param>
                     <param name="展平" key="9999/999166631/999166633/2/351" value="1"></param>
                 <text>
-                    <text-style ref="ts${key + 1}">${item.data.text
-      }</text-style>
+                    <text-style ref="ts${key + 1}">${
+      item.data.text
+    }</text-style>
                 </text>
                 <text-style-def id="ts${key + 1}">
                     <text-style font="PingFang SC" fontSize="52" fontFace="Semibold" fontColor="0.999993 1 1 1" bold="1" shadowColor="0 0 0 0.75" shadowOffset="5 315" alignment="center"></text-style>
