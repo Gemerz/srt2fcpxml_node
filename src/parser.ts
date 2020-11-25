@@ -44,7 +44,7 @@ function runParse(params: ParserParam) {
       const outputPath = params.outputPath + '/' + fileName + '.fcpxml';
       const eventName = params.eventName || 'srt2fcpxml_node';
       const resourceConfig = resources[params.rateKey];
-      const gap = params.gap
+      const gap = params.gap;
       const config = {
         cuesTempate: CueTempate(list, resourceConfig, gap).join(''),
         project: {
@@ -58,7 +58,7 @@ function runParse(params: ParserParam) {
         },
         totalCueTime: totalCueTime,
         resources: resourceConfig,
-        gap
+        gap,
       };
       const fcpXMl = MainTemplate(config, resourceConfig);
       const fcpxmlFile = fs.createWriteStream(outputPath);
