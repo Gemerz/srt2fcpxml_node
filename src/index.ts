@@ -10,7 +10,7 @@ import * as fs from 'fs-extra';
 import { checkRate, checkSrtPath, formateRateKey } from './lib/helper';
 import { Parser } from './parser';
 
-const pjson = fs.readJsonSync(path.resolve(root.path, 'package.json'));
+const pjson = fs.readJsonSync(path.resolve(__dirname, '../../', 'package.json'));
 program
   .version(pjson.version)
   .requiredOption('-s, --srt <source>', 'srt file path')
