@@ -79,15 +79,18 @@ export const CueTemplate = (
         120000.0) /
       resource.frameDurationDenominator;
 
-    return ` <title name="${item.data.text}" lane="1" offset="${offset}/${resource.frameDurationDenominator
-      }s" ref="r2" duration="${duration}/${resource.frameDurationDenominator
-      }s" start="${projectStart}/${resource.frameDurationDenominator}s">
+    return ` <title name="${item.data.text}" lane="1" offset="${offset}/${
+      resource.frameDurationDenominator
+    }s" ref="r2" duration="${duration}/${
+      resource.frameDurationDenominator
+    }s" start="${projectStart}/${resource.frameDurationDenominator}s">
                     <param name="位置" key="9999/999166631/999166633/1/100/101" value="0 -450"></param>
                     <param name="对齐" key="9999/999166631/999166633/2/354/999169573/401" value="1 (居中)"></param>
                     <param name="展平" key="9999/999166631/999166633/2/351" value="1"></param>
                 <text>
-                    <text-style ref="ts${key + 1}">${item.data.text
-      }</text-style>
+                    <text-style ref="ts${key + 1}">${
+      item.data.text
+    }</text-style>
                 </text>
                 <text-style-def id="ts${key + 1}">
                     <text-style font="PingFang SC" fontSize="52" fontFace="Semibold" fontColor="0.999993 1 1 1" bold="1" shadowColor="0 0 0 0.75" shadowOffset="5 315" alignment="center"></text-style>
