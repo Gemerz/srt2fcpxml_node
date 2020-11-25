@@ -1,4 +1,4 @@
-# srt2fcpxml
+# # srt2fcpxml
 
 > the srt subtitle file is converted to a final cut pro subtitle
 
@@ -12,9 +12,9 @@ npm i srt2fcpxml -g
 
 ```bash
 srt2fcpxml [options]
-```
 
-usage: main [options]
+
+usage: srt2fcpxml [options]
 
 Options:
 -V, --version output the version number
@@ -25,3 +25,15 @@ Options:
 -p, --project <project> project name
 -g, --gap <gap> gap: number,default 3.6
 -h, --help display help for command
+```
+
+##basic
+
+```bash
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop
+```
+
+##thanks:
+
+##go version:
+[https://github.com/GanymedeNil/srt2fcpxml](https://github.com/GanymedeNil/srt2fcpxml)
