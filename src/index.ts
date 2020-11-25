@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 export * from './lib/async';
 export * from './lib/number';
+export { Parser } from './parser';
 import * as path from 'path';
 
 import * as root from 'app-root-path';
