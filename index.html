@@ -79,20 +79,18 @@
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h1>usage</h1>
 				</a>
-				<pre><code class="language-bash">srt2fcpxml [options]
-
-
-usage: srt2fcpxml [options]
+				<pre><code class="language-bash">Usage: srt2fcpxml [options]
 
 Options:
--V, --version output the version number
--s, --srt &lt;<span class="hljs-built_in">source</span>&gt; srt file path
--o, --output &lt;output&gt; fileout name [deafault current]
--r, --rate &lt;rate&gt; rate:AKA:23.98,24,25,29.87,30,50,59.94,60
--e, --event &lt;event&gt; event name
--p, --project &lt;project&gt; project name
--g, --gap &lt;gap&gt; gap: number,default 3.6
--h, --<span class="hljs-built_in">help</span> display <span class="hljs-built_in">help</span> <span class="hljs-keyword">for</span> <span class="hljs-built_in">command</span></code></pre>
+  -V, --version            output the version number
+  -s, --srt &lt;<span class="hljs-built_in">source</span>&gt;       srt file path
+  -o, --output &lt;output&gt;    output dir name [default current]
+  -r, --rate &lt;rate&gt;        rate: default 30, AKA:23.98,24,25,29.87,30,50,59.94,60
+  -e, --event &lt;event&gt;      event name
+  -p, --project &lt;project&gt;  project name
+  -c, --custom             use custom plugin
+  -g, --gap &lt;gap&gt;          gap: number,default 3.6
+  -h, --<span class="hljs-built_in">help</span>               display <span class="hljs-built_in">help</span> <span class="hljs-keyword">for</span> <span class="hljs-built_in">command</span></code></pre>
 				<a href="#basic" id="basic" style="color: inherit; text-decoration: none;">
 					<h2>basic</h2>
 				</a>
@@ -120,6 +118,10 @@ srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 60</code></pre>
 					<h2>FCPX custom subtitle plugin</h2>
 				</a>
 				<pre><code class="language-bash">srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop  -c</code></pre>
+				<p><img src="https://user-images.githubusercontent.com/60084718/100301992-50cb3900-2fd4-11eb-864f-cedbdd2ad5e9.gif" alt="FCPX custom subtitle plugin gif"></p>
+				<blockquote>
+					<p>using FCPX custom subtitle plugin flag will copy a subtitle plugin to your motion teamplate folder</p>
+				</blockquote>
 				<a href="#thanks" id="thanks" style="color: inherit; text-decoration: none;">
 					<h2>thanks:</h2>
 				</a>
