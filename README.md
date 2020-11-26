@@ -37,6 +37,37 @@ Options:
 srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop
 ```
 
+## FPS rate
+
+```bash
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 23.98
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 40
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 25
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 29.87
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 30
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 50
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 59.94
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 60
+```
+
+## FCPX EventName
+
+```bash
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -e <eventname>
+```
+
+## FCPX projectName
+
+```bash
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop  -p <projectName>
+```
+
+## FCPX custom subtitle plugin
+
+```bash
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop  -c
+```
+
 ## thanks:
 
 ### go version:
