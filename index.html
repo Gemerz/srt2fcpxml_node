@@ -67,6 +67,7 @@
 				<a href="#srt2fcpxml" id="srt2fcpxml" style="color: inherit; text-decoration: none;">
 					<h1>srt2fcpxml</h1>
 				</a>
+				<p><a href="https://circleci.com/gh/chloe-lam/srt2fcpxml_node"><img src="https://circleci.com/gh/chloe-lam/srt2fcpxml_node.svg?style=shield" alt="chloe-lam"></a></p>
 				<blockquote>
 					<p>the srt subtitle file is converted to a final cut pro subtitle</p>
 				</blockquote>
@@ -96,6 +97,29 @@ Options:
 					<h2>basic</h2>
 				</a>
 				<pre><code class="language-bash">srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop</code></pre>
+				<a href="#fps-rate" id="fps-rate" style="color: inherit; text-decoration: none;">
+					<h2>FPS rate</h2>
+				</a>
+				<pre><code class="language-bash">srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 23.98
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 40
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 25
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 29.87
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 30
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 50
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 59.94
+srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -r 60</code></pre>
+				<a href="#fcpx-eventname" id="fcpx-eventname" style="color: inherit; text-decoration: none;">
+					<h2>FCPX EventName</h2>
+				</a>
+				<pre><code class="language-bash">srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop -e &lt;eventname&gt;</code></pre>
+				<a href="#fcpx-projectname" id="fcpx-projectname" style="color: inherit; text-decoration: none;">
+					<h2>FCPX projectName</h2>
+				</a>
+				<pre><code class="language-bash">srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop  -p &lt;projectName&gt;</code></pre>
+				<a href="#fcpx-custom-subtitle-plugin" id="fcpx-custom-subtitle-plugin" style="color: inherit; text-decoration: none;">
+					<h2>FCPX custom subtitle plugin</h2>
+				</a>
+				<pre><code class="language-bash">srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop  -c</code></pre>
 				<a href="#thanks" id="thanks" style="color: inherit; text-decoration: none;">
 					<h2>thanks:</h2>
 				</a>
@@ -137,10 +161,10 @@ Options:
 						<a href="globals.html#log" class="tsd-kind-icon">log</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="globals.html#pjson" class="tsd-kind-icon">pjson</a>
+						<a href="globals.html#packagejson" class="tsd-kind-icon">package<wbr>Json</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#cuetempate" class="tsd-kind-icon">Cue<wbr>Tempate</a>
+						<a href="globals.html#cuetemplate" class="tsd-kind-icon">Cue<wbr>Template</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#maintemplate" class="tsd-kind-icon">Main<wbr>Template</a>
@@ -158,10 +182,19 @@ Options:
 						<a href="globals.html#checksrtpath" class="tsd-kind-icon">check<wbr>Srt<wbr>Path</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="globals.html#copyplugin" class="tsd-kind-icon">copy<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="globals.html#double" class="tsd-kind-icon">double</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#formateratekey" class="tsd-kind-icon">formate<wbr>Rate<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#mainprocess" class="tsd-kind-icon">main<wbr>Process</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#plugintemplate" class="tsd-kind-icon">plugin<wbr>Template</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#power" class="tsd-kind-icon">power</a>

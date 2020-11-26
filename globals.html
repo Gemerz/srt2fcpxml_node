@@ -87,20 +87,23 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable"><a href="globals.html#constants" class="tsd-kind-icon">constants</a></li>
 								<li class="tsd-kind-variable"><a href="globals.html#log" class="tsd-kind-icon">log</a></li>
-								<li class="tsd-kind-variable"><a href="globals.html#pjson" class="tsd-kind-icon">pjson</a></li>
+								<li class="tsd-kind-variable"><a href="globals.html#packagejson" class="tsd-kind-icon">package<wbr>Json</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function"><a href="globals.html#cuetempate" class="tsd-kind-icon">Cue<wbr>Tempate</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#cuetemplate" class="tsd-kind-icon">Cue<wbr>Template</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#maintemplate" class="tsd-kind-icon">Main<wbr>Template</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#parser" class="tsd-kind-icon">Parser</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#asyncabc" class="tsd-kind-icon">asyncABC</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#checkrate" class="tsd-kind-icon">check<wbr>Rate</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#checksrtpath" class="tsd-kind-icon">check<wbr>Srt<wbr>Path</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#copyplugin" class="tsd-kind-icon">copy<wbr>Plugin</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#double" class="tsd-kind-icon">double</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#formateratekey" class="tsd-kind-icon">formate<wbr>Rate<wbr>Key</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#mainprocess" class="tsd-kind-icon">main<wbr>Process</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#plugintemplate" class="tsd-kind-icon">plugin<wbr>Template</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#power" class="tsd-kind-icon">power</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#runparse" class="tsd-kind-icon">run<wbr>Parse</a></li>
 							</ul>
@@ -120,17 +123,17 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="maintemplatedatatype" class="tsd-anchor"></a>
 					<h3>Main<wbr>Template<wbr>Data<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">Main<wbr>Template<wbr>Data<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>cuesTempate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>uid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>gap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>project<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>modDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>uid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>resources<span class="tsd-signature-symbol">: </span><a href="globals.html#resourcestype" class="tsd-signature-type">resourcesType</a><span class="tsd-signature-symbol">; </span>totalCueTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">Main<wbr>Template<wbr>Data<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>cuesTemplate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>uid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>gap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>isUsePlugin<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>project<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>modDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>uid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>resources<span class="tsd-signature-symbol">: </span><a href="globals.html#resourcestype" class="tsd-signature-type">resourcesType</a><span class="tsd-signature-symbol">; </span>totalCueTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/template.ts#L10">template.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/template.ts#L11">template.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> cues<wbr>Tempate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> cues<wbr>Template<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>uid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
@@ -145,6 +148,9 @@
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> gap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> is<wbr>Use<wbr>Plugin<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span></h5>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> project<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>modDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>uid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
@@ -172,10 +178,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="parserparam" class="tsd-anchor"></a>
 					<h3>Parser<wbr>Param</h3>
-					<div class="tsd-signature tsd-kind-icon">Parser<wbr>Param<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>gap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>outputPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>projectName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>rateKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>srtPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">Parser<wbr>Param<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>gap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>isUsePlugin<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>outputPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>projectName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>rateKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>srtPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/parser.ts#L11">parser.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/parser.ts#L13">parser.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -186,6 +192,9 @@
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> gap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> is<wbr>Use<wbr>Plugin<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span></h5>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> output<wbr>Path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
@@ -208,7 +217,7 @@
 					<div class="tsd-signature tsd-kind-icon">cue<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/template.ts#L2">template.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/template.ts#L3">template.ts:3</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -240,7 +249,7 @@
 					<div class="tsd-signature tsd-kind-icon">resources<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>duration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>frameDuration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>frameDurationDenominator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>frameDurationMolecular<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>frameRate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L11">constants/resources.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L11">constants/resources.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -276,7 +285,7 @@
 					<div class="tsd-signature tsd-kind-icon">constants<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/constants.ts#L1">constants/constants.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/constants.ts#L1">constants/constants.ts:1</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -291,17 +300,17 @@
 					<div class="tsd-signature tsd-kind-icon">log<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">log</span><span class="tsd-signature-symbol"> = console.log</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/lib/helper.ts#L9">lib/helper.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/lib/helper.ts#L13">lib/helper.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable">
-					<a name="pjson" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> pjson</h3>
-					<div class="tsd-signature tsd-kind-icon">pjson<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = fs.readJsonSync(path.resolve(root.path, &#x27;package.json&#x27;))</span></div>
+					<a name="packagejson" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> package<wbr>Json</h3>
+					<div class="tsd-signature tsd-kind-icon">package<wbr>Json<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = fs.readJsonSync(path.resolve(__dirname, &#x27;../../&#x27;, &#x27;package.json&#x27;))</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/index.ts#L13">index.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/index.ts#L21">index.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -309,16 +318,16 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="cuetempate" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Cue<wbr>Tempate</h3>
+					<a name="cuetemplate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Cue<wbr>Template</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">Cue<wbr>Tempate<span class="tsd-signature-symbol">(</span>cue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><a href="globals.html#cuetype" class="tsd-signature-type">cueType</a><span class="tsd-signature-symbol">[]</span>, resource<span class="tsd-signature-symbol">: </span><a href="globals.html#resourcestype" class="tsd-signature-type">resourcesType</a>, gap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">Cue<wbr>Template<span class="tsd-signature-symbol">(</span>cue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><a href="globals.html#cuetype" class="tsd-signature-type">cueType</a><span class="tsd-signature-symbol">[]</span>, resource<span class="tsd-signature-symbol">: </span><a href="globals.html#resourcestype" class="tsd-signature-type">resourcesType</a>, gap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, isUsePlugin<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/template.ts#L63">template.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/template.ts#L66">template.ts:66</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -331,6 +340,9 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> gap: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 3.6</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> isUsePlugin: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -347,7 +359,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/template.ts#L25">template.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/template.ts#L27">template.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -373,7 +385,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/parser.ts#L74">parser.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/parser.ts#L91">parser.ts:91</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -396,7 +408,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/lib/async.ts#L20">lib/async.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/lib/async.ts#L20">lib/async.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -431,7 +443,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/lib/helper.ts#L18">lib/helper.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/lib/helper.ts#L22">lib/helper.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -454,7 +466,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/lib/helper.ts#L10">lib/helper.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/lib/helper.ts#L14">lib/helper.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -468,6 +480,23 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="copyplugin" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> copy<wbr>Plugin</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">copy<wbr>Plugin<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/lib/helper.ts#L42">lib/helper.ts:42</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="double" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> double</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -477,7 +506,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/lib/number.ts#L22">lib/number.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/lib/number.ts#L22">lib/number.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -528,13 +557,59 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/lib/helper.ts#L30">lib/helper.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/lib/helper.ts#L34">lib/helper.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>rate: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="mainprocess" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> main<wbr>Process</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">main<wbr>Process<span class="tsd-signature-symbol">(</span>isUsePlugin<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/index.ts#L39">index.ts:39</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> isUsePlugin: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="plugintemplate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> plugin<wbr>Template</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">plugin<wbr>Template<span class="tsd-signature-symbol">(</span>isUsePlugin<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/template.ts#L106">template.ts:106</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> isUsePlugin: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -551,7 +626,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/lib/number.ts#L46">lib/number.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/lib/number.ts#L46">lib/number.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -605,7 +680,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/parser.ts#L19">parser.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/parser.ts#L22">parser.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -627,7 +702,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 					<div class="tsd-signature tsd-kind-icon">plugin<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/plugin.ts#L1">constants/plugin.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/plugin.ts#L1">constants/plugin.ts:1</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -636,17 +711,17 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<div class="tsd-signature tsd-kind-icon">base<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;.../Titles.localized/Bumper:Opener.localized/Basic Title.localized/Basic Title.moti&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/plugin.ts#L2">constants/plugin.ts:2</a></li>
+								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/plugin.ts#L2">constants/plugin.ts:2</a></li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 						<a name="plugintype.custom" class="tsd-anchor"></a>
 						<h3>custom</h3>
-						<div class="tsd-signature tsd-kind-icon">custom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div>
+						<div class="tsd-signature tsd-kind-icon">custom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x60;~/Titles.localized/adaptive-background/adaptive-background.moti&#x60;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/plugin.ts#L4">constants/plugin.ts:4</a></li>
+								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/plugin.ts#L5">constants/plugin.ts:5</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -657,7 +732,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 					<div class="tsd-signature tsd-kind-icon">resources<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L19">constants/resources.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L19">constants/resources.ts:19</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
@@ -666,7 +741,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<div class="tsd-signature tsd-kind-icon">p2398<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L20">constants/resources.ts:20</a></li>
+								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L20">constants/resources.ts:20</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -675,7 +750,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;2400s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L22">constants/resources.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L22">constants/resources.ts:22</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -685,7 +760,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;1001/24000s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L23">constants/resources.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L23">constants/resources.ts:23</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -695,7 +770,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Denominator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 24000</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L26">constants/resources.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L26">constants/resources.ts:26</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -705,7 +780,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Molecular<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1001</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L25">constants/resources.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L25">constants/resources.ts:25</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -715,7 +790,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 23.98</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L24">constants/resources.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L24">constants/resources.ts:24</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -725,7 +800,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;p2398&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L21">constants/resources.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L21">constants/resources.ts:21</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -736,7 +811,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<div class="tsd-signature tsd-kind-icon">p2400<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L28">constants/resources.ts:28</a></li>
+								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L28">constants/resources.ts:28</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -745,7 +820,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;2400s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L30">constants/resources.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L30">constants/resources.ts:30</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -755,7 +830,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;100/2400s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L31">constants/resources.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L31">constants/resources.ts:31</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -765,7 +840,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Denominator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2400</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L34">constants/resources.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L34">constants/resources.ts:34</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -775,7 +850,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Molecular<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 100</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L33">constants/resources.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L33">constants/resources.ts:33</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -785,7 +860,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 24</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L32">constants/resources.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L32">constants/resources.ts:32</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -795,7 +870,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;p2400&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L29">constants/resources.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L29">constants/resources.ts:29</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -806,7 +881,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<div class="tsd-signature tsd-kind-icon">p2500<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L36">constants/resources.ts:36</a></li>
+								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L36">constants/resources.ts:36</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -815,7 +890,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;2500s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L38">constants/resources.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L38">constants/resources.ts:38</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -825,7 +900,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;100/2500&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L39">constants/resources.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L39">constants/resources.ts:39</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -835,7 +910,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Denominator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2500</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L42">constants/resources.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L42">constants/resources.ts:42</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -845,7 +920,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Molecular<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 100</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L41">constants/resources.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L41">constants/resources.ts:41</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -855,7 +930,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 25</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L40">constants/resources.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L40">constants/resources.ts:40</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -865,7 +940,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;p2500&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L37">constants/resources.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L37">constants/resources.ts:37</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -876,7 +951,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<div class="tsd-signature tsd-kind-icon">p2997<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L44">constants/resources.ts:44</a></li>
+								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L44">constants/resources.ts:44</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -885,7 +960,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;3000s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L46">constants/resources.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L46">constants/resources.ts:46</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -895,7 +970,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;1001/30000s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L47">constants/resources.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L47">constants/resources.ts:47</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -905,7 +980,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Denominator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 30000</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L50">constants/resources.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L50">constants/resources.ts:50</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -915,7 +990,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Molecular<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1001</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L49">constants/resources.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L49">constants/resources.ts:49</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -925,7 +1000,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 29.97</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L48">constants/resources.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L48">constants/resources.ts:48</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -935,7 +1010,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;p2997&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L45">constants/resources.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L45">constants/resources.ts:45</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -946,7 +1021,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<div class="tsd-signature tsd-kind-icon">p3000<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L52">constants/resources.ts:52</a></li>
+								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L52">constants/resources.ts:52</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -955,7 +1030,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;3000s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L54">constants/resources.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L54">constants/resources.ts:54</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -965,7 +1040,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;100/3000s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L55">constants/resources.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L55">constants/resources.ts:55</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -975,7 +1050,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Denominator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 3000</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L58">constants/resources.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L58">constants/resources.ts:58</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -985,7 +1060,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Molecular<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 100</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L57">constants/resources.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L57">constants/resources.ts:57</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -995,7 +1070,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 30</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L56">constants/resources.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L56">constants/resources.ts:56</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1005,7 +1080,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;p3000&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L53">constants/resources.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L53">constants/resources.ts:53</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1016,7 +1091,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<div class="tsd-signature tsd-kind-icon">p5000<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L60">constants/resources.ts:60</a></li>
+								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L60">constants/resources.ts:60</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -1025,7 +1100,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;5000s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L62">constants/resources.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L62">constants/resources.ts:62</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1035,7 +1110,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;100/5000s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L63">constants/resources.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L63">constants/resources.ts:63</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1045,7 +1120,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Denominator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 5000</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L66">constants/resources.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L66">constants/resources.ts:66</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1055,7 +1130,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Molecular<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 100</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L65">constants/resources.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L65">constants/resources.ts:65</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1065,7 +1140,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 50</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L64">constants/resources.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L64">constants/resources.ts:64</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1075,7 +1150,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;p5000&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L61">constants/resources.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L61">constants/resources.ts:61</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1086,7 +1161,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<div class="tsd-signature tsd-kind-icon">p5994<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L68">constants/resources.ts:68</a></li>
+								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L68">constants/resources.ts:68</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -1095,7 +1170,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;6000s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L70">constants/resources.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L70">constants/resources.ts:70</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1105,7 +1180,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;1001/60000s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L71">constants/resources.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L71">constants/resources.ts:71</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1115,7 +1190,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Denominator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 60000</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L74">constants/resources.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L74">constants/resources.ts:74</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1125,7 +1200,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Molecular<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1001</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L73">constants/resources.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L73">constants/resources.ts:73</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1135,7 +1210,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 50</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L72">constants/resources.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L72">constants/resources.ts:72</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1145,7 +1220,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;p2398&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L69">constants/resources.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L69">constants/resources.ts:69</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1156,7 +1231,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<div class="tsd-signature tsd-kind-icon">p6000<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L76">constants/resources.ts:76</a></li>
+								<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L76">constants/resources.ts:76</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -1165,7 +1240,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;6000s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L78">constants/resources.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L78">constants/resources.ts:78</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1175,7 +1250,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;100/6000s&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L79">constants/resources.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L79">constants/resources.ts:79</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1185,7 +1260,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Denominator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 6000</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L82">constants/resources.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L82">constants/resources.ts:82</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1195,7 +1270,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Duration<wbr>Molecular<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 100</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L81">constants/resources.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L81">constants/resources.ts:81</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1205,7 +1280,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">frame<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 60</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L80">constants/resources.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L80">constants/resources.ts:80</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1215,7 +1290,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 							<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;p6000&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/5b5e83d/src/constants/resources.ts#L77">constants/resources.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/chloe-lam/srt2fcpxml_node/blob/cdf69f5/src/constants/resources.ts#L77">constants/resources.ts:77</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -1255,10 +1330,10 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<a href="globals.html#log" class="tsd-kind-icon">log</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="globals.html#pjson" class="tsd-kind-icon">pjson</a>
+						<a href="globals.html#packagejson" class="tsd-kind-icon">package<wbr>Json</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#cuetempate" class="tsd-kind-icon">Cue<wbr>Tempate</a>
+						<a href="globals.html#cuetemplate" class="tsd-kind-icon">Cue<wbr>Template</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#maintemplate" class="tsd-kind-icon">Main<wbr>Template</a>
@@ -1276,10 +1351,19 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<a href="globals.html#checksrtpath" class="tsd-kind-icon">check<wbr>Srt<wbr>Path</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="globals.html#copyplugin" class="tsd-kind-icon">copy<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="globals.html#double" class="tsd-kind-icon">double</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#formateratekey" class="tsd-kind-icon">formate<wbr>Rate<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#mainprocess" class="tsd-kind-icon">main<wbr>Process</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#plugintemplate" class="tsd-kind-icon">plugin<wbr>Template</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#power" class="tsd-kind-icon">power</a>
