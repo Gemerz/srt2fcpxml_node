@@ -43,7 +43,7 @@ export const copyPlugin = () => {
   const titlesPath = `${os.homedir()}/Movies/Motion Templates.localized/Titles.localized`;
   const pluginPath = path.resolve(
     __dirname,
-    '../../../src/plugin/adaptive-background'
+    '../../../plugin/adaptive-background'
   );
   if (!fs.existsSync(titlesPath)) {
     /* cSpell:disable */
