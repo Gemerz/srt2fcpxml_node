@@ -1,6 +1,6 @@
 {
   "name": "srt2fcpxml",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "srt to fcpxml srt2fcpxml node version",
   "main": "build/main/index.js",
   "bin": {
