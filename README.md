@@ -66,6 +66,10 @@ srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop  -p <projectName>
 srt2fcpxml -s ~/Desktop/test-vue.srt  -o ~/Desktop  -c
 ```
 
+![FCPX custom subtitle plugin gif](https://user-images.githubusercontent.com/60084718/100301992-50cb3900-2fd4-11eb-864f-cedbdd2ad5e9.gif)
+
+> using FCPX custom subtitle plugin flag will copy a subtitle plugin to your motion teamplate folder
+
 ## thanks:
 
 ### go version:
