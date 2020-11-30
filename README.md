@@ -6,6 +6,10 @@
 
 [online document](https://chloe-lam.github.io/srt2fcpxml_node/)
 
+# About FCPXML
+
+[apple official online document](https://developer.apple.com/library/archive/documentation/FinalCutProX/Reference/FinalCutProXXMLFormat/Introduction/Introduction.html)
+
 # installation
 
 ```js
